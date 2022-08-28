@@ -1,0 +1,58 @@
+﻿@model EntityLayer.Concrete.Author
+
+@{
+    Layout = "~/Views/Shared/_BlogLayout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <link href="//fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Report-Login-Free/css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/Report-Login-Free/css/font-awesome.min.css" type="text/css" media="all">
+</head>
+<body>
+<section class="w3l-hotair-form" style="background-image: url('https://cdn.hovia.com/app/uploads/Blue-Dog-Paw-Print-Pattern-Wallpaper-Mural-Plain.jpg');">
+        <h1 style="color:ghostwhite;">Paw <img src="https://iili.io/rvQewu.png"/> Place</h1>
+        <div class="container content-wthree w3l_form align-self left_grid_info" style="background-color:skyblue">
+        <div class="workinghny-form-grid">
+        <div class="content-wthree w3l_form align-self left_grid_info">
+
+        <form class="form-group" method="post" >
+
+            @Html.Label("Kullanıcı Adı")
+            @Html.TextBoxFor(x => x.AuthorName, new { @class = "form-control" })
+
+            </br>
+
+            @Html.Label("Ad Soyad")
+            @Html.TextBoxFor(x => x.AuthorTitle, new { @class = "form-control" })
+            </br>
+            @Html.Label("Email")
+            @Html.TextBoxFor(x => x.Mail, new { @class = "form-control" })
+            </br>
+            @Html.Label("Şifre")
+            @Html.TextBoxFor(x => x.Password, new { @class = "form-control" })
+            </br>
+            @Html.Label("Profil Resmi URL")
+            @Html.TextBoxFor(x => x.AuthorImage, new { @class = "form-control" })
+            </br>
+            @Html.Label("GSM")
+            @Html.TextBoxFor(x => x.PhoneNumber, new { @class = "form-control" })
+            </br>
+            @Html.Label("Hakkında")
+            @Html.TextBoxFor(x => x.AuthorAbout, new { @class = "form-control" })
+            </br>
+            @Html.Label("İlgi Alanı")
+            @Html.TextBoxFor(x => x.AboutShort, new { @class = "form-control" })
+
+
+
+            <button class="btn btn-info" style="margin-top:10px;float:right">Kaydol</button>
+            <br />
+        </form>
+    </div>
+    </div>
+</div>
+</section>
+</body>
+</html>
